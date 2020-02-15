@@ -37,10 +37,7 @@ module.exports = {
         '@babel/preset-typescript',
         ['@babel/preset-react', { development: true }],
       ],
-      plugins: [
-        ...proposalPlugins,
-        '@babel/plugin-syntax-dynamic-import',
-      ],
+      plugins: [...proposalPlugins, '@babel/plugin-syntax-dynamic-import'],
     },
 
     test: {
@@ -58,10 +55,7 @@ module.exports = {
         '@babel/preset-typescript',
         '@babel/preset-react',
       ],
-      plugins: [
-        ...proposalPlugins,
-        'babel-plugin-dynamic-import-node',
-      ],
+      plugins: [...proposalPlugins, 'babel-plugin-dynamic-import-node'],
     },
   },
 }
