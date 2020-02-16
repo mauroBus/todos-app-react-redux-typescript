@@ -19,7 +19,11 @@
 }
 
 .text {
+  display: inline-block;
+  overflow: hidden;
   text-decoration: none;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .textCompleted {
@@ -36,4 +40,10 @@
 
 .starred {
   color: var(--yellow);
+}
+
+@media (--below-medium-viewport) {
+  .todo .actionButton {
+    opacity: 1;
+  }
 }

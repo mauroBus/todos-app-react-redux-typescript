@@ -1,3 +1,4 @@
+@import "../../../styles/variables";
 
 /* extra specificity needed. */
 fieldset.filters {
@@ -7,5 +8,12 @@ fieldset.filters {
   & .radioGroup {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (--below-medium-viewport) {
+  fieldset .radioGroup {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

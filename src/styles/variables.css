@@ -33,3 +33,21 @@
       var(--dark-green)
     );
 }
+
+/* < 480px */
+@custom-media --below-small-viewport (max-width: 29.9375em);
+
+/* >= 480px */
+@custom-media --above-small-viewport (min-width: 30em);
+
+/* < 768px */
+@custom-media --below-medium-viewport (max-width: 47.9375em);
+
+/* >= 768px */
+@custom-media --above-medium-viewport (min-width: 48em);
+
+/* < 1024px */
+@custom-media --below-large-viewport (max-width: 63.9375em);
+
+/* >= 1024px */
+@custom-media --above-large-viewport (min-width: 64em);
