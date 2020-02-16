@@ -1,0 +1,39 @@
+@import "../../../styles/variables";
+
+.todo {
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: transform 400ms ease;
+  width: 100%;
+
+  & .actionButton {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover .actionButton,
+  & .actionButton:focus {
+    opacity: 1;
+  }
+}
+
+.text {
+  text-decoration: none;
+}
+
+.textCompleted {
+  color: var(--grad-wide-green);
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.textStarred {
+  color: var(--blue-grey);
+  font-weight: bold;
+}
+
+.starred {
+  color: var(--yellow);
+}
