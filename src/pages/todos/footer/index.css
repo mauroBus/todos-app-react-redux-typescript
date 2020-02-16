@@ -1,0 +1,18 @@
+
+.footer {
+  margin: 1rem 0;
+}
+
+.itemsLeft {
+  display: block;
+  font-style: italic;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5rem 0 1rem 0;
+}
