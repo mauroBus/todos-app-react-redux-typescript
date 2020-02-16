@@ -1,0 +1,11 @@
+
+.emptyCard {
+  margin: 0 auto;
+  text-align: center;
+  width: 20rem;
+}
+
+.emptyCardActions {
+  display: flex;
+  justify-content: center;
+}
