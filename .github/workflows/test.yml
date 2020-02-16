@@ -9,5 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install deps
+      run: yarn
+
     - name: Test
       run: yarn test
