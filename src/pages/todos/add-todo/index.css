@@ -1,0 +1,10 @@
+.form {
+  display: flex;
+  align-items: center;
+}
+
+/* extra specificity needed. */
+.form .addButton {
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
