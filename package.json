@@ -20,6 +20,7 @@
     "eslint": "eslint . --ext .js,.ts,.tsx",
     "prebuild": "rimraf build",
     "prettier": "prettier --write \"**/*.{js,ts,tsx}\"",
+    "serve": "node ./server.js",
     "start": "webpack-dev-server --config=webpack/config-dev-server.js",
     "stylelint": "stylelint \"src/**/*.css\"",
     "test": "yarn prettier && yarn eslint && yarn stylelint",

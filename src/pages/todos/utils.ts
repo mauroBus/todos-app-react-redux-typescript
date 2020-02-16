@@ -1,4 +1,3 @@
-
 export const sortTodos = (todos: ToDo[]) => {
   return todos.sort((t1, t2) => {
     if (t1.completed === t2.completed) {
