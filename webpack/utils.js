@@ -10,8 +10,8 @@ function toEmoji(n) {
   return emojis.join('')
 }
 
-// We only use a custom getLocalIdent function for dev
-// In prod we just use the recommended localIdentName so as to get consistent idempotent builds
+// The custom getLocalIdent function is only used for dev.
+// In prod, it is recommended to use `localIdentName` so as to get consistent idempotent builds
 // https://github.com/webpack-contrib/css-loader#localidentname
 function devIdentity(classIndex, localName) {
   return `${localName}${toEmoji(classIndex)}`

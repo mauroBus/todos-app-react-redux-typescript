@@ -10,7 +10,11 @@ export default function App() {
 
       <section className={styles.app}>
         <header>
-          <h1 className={styles.title}>React - Redux - TypeScript Todos App</h1>
+          <h1 className={styles.title} translate="yes">
+            Todos App
+            <br />
+            React - Redux - TypeScript
+          </h1>
         </header>
         <TodosPage />
       </section>

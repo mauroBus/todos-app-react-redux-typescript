@@ -51,8 +51,9 @@ module.exports = merge(baseConfig, {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
-              getLocalIdent: getDevLocalIdent(),
+              modules: {
+                getLocalIdent: getDevLocalIdent(),
+              },
               importLoaders: 1,
               sourceMap: false,
             },

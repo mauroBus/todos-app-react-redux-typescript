@@ -62,11 +62,9 @@ module.exports = merge(baseConfig, {
           {
             loader: 'css-loader',
             options: {
-              // Recommended localIdentName: https://github.com/webpack-contrib/css-loader#localidentname
-              // modules: {
-              //   localIdentName: '[hash:base64:5]',
-              // },
-              modules: true,
+              modules: {
+                localIdentName: '[hash:base64:5]',
+              },
               importLoaders: 1,
               sourceMap: false,
             },
