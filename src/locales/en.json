@@ -1,0 +1,71 @@
+{
+  "active_d7e32718": {
+    "message": "Active"
+  },
+  "add_8523c19b": {
+    "message": "Add"
+  },
+  "all_4321c3a1": {
+    "message": "All"
+  },
+  "amountleft_plural_0_all_completed_one_item_left_ot_a5f0de5e": {
+    "message": "{ amountLeft, plural,\n     =0 {All completed!}\n    one {# item left}\n  other {# items left}\n}"
+  },
+  "clear_completed_db3cc348": {
+    "message": "Clear completed"
+  },
+  "complete_all_7eba5f88": {
+    "message": "Complete all"
+  },
+  "complete_item_bda4f9a3": {
+    "message": "Complete item"
+  },
+  "completed_19711ce7": {
+    "message": "Completed"
+  },
+  "create_item_cbb0c798": {
+    "message": "Create item"
+  },
+  "delete_a6efa79d": {
+    "message": "Delete"
+  },
+  "delete_itemname_ec2577c0": {
+    "message": "Delete { itemName }"
+  },
+  "edit_c5fbea07": {
+    "message": "Edit"
+  },
+  "edit_itemname_328a7f2b": {
+    "message": "Edit { itemName }"
+  },
+  "edit_text_d2462fb3": {
+    "message": "Edit text"
+  },
+  "filter_by_c78696bb": {
+    "message": "Filter By:"
+  },
+  "filter_todos_a8b241e7": {
+    "message": "Filter todos"
+  },
+  "highlight_ea1198bd": {
+    "message": "Highlight"
+  },
+  "highlight_itemname_4def67d5": {
+    "message": "Highlight { itemName }"
+  },
+  "show_all_967a90f0": {
+    "message": "Show all"
+  },
+  "there_are_no_items_for_the_selected_criteria_5dc5a0b2": {
+    "message": "There are no items for the selected criteria."
+  },
+  "todos_app_0_react_redux_typescript_846ff4d9": {
+    "message": "Todos App<0/>React - Redux - TypeScript"
+  },
+  "uncomplete_all_1d1dc17a": {
+    "message": "Uncomplete all"
+  },
+  "what_needs_to_be_done_28d06f44": {
+    "message": "What needs to be done?"
+  }
+}

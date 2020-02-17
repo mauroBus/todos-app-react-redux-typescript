@@ -50,6 +50,10 @@ module.exports = {
       {
         from: path.join(rootDir, 'static'),
       },
+      {
+        from: path.join(srcDir, '/locales/en.json'),
+        to: 'locales.json',
+      },
     ]),
   ],
   node: {

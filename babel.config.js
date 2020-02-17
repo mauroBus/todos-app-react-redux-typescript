@@ -14,6 +14,14 @@ const proposalPlugins = [
   '@babel/plugin-proposal-nullish-coalescing-operator',
 ]
 
+const formatMessagePlugin = [
+  'transform-format-message',
+  {
+    generateId: 'underscored_crc32',
+    outFile: 'locales/en.json'
+  },
+]
+
 module.exports = {
   env: {
     development: {
@@ -23,12 +31,11 @@ module.exports = {
         '@babel/preset-react',
       ],
       plugins: [
-        // Only include react-refresh plugin if we are running WDS with `hot: true`
-        process.env.WDS_HOT && 'react-refresh/babel',
         ...proposalPlugins,
+        formatMessagePlugin,
         '@babel/plugin-syntax-dynamic-import',
         '@babel/plugin-transform-react-jsx-source',
-      ].filter(Boolean),
+      ],
     },
 
     production: {
@@ -37,7 +44,24 @@ module.exports = {
         '@babel/preset-typescript',
         ['@babel/preset-react', { development: true }],
       ],
-      plugins: [...proposalPlugins, '@babel/plugin-syntax-dynamic-import'],
+      plugins: [
+        ...proposalPlugins,
+        formatMessagePlugin,
+        '@babel/plugin-syntax-dynamic-import',
+      ],
+    },
+
+    locale: {
+      presets: [
+        browserPresetEnv,
+        '@babel/preset-typescript',
+        '@babel/preset-react',
+      ],
+      plugins: [
+        ...proposalPlugins,
+        '@babel/plugin-syntax-dynamic-import',
+        '@babel/plugin-transform-react-jsx-source',
+      ],
     },
 
     test: {
@@ -55,7 +79,12 @@ module.exports = {
         '@babel/preset-typescript',
         '@babel/preset-react',
       ],
-      plugins: [...proposalPlugins, 'babel-plugin-dynamic-import-node'],
+
+      plugins: [
+        ...proposalPlugins,
+        formatMessagePlugin,
+        'babel-plugin-dynamic-import-node',
+      ],
     },
   },
 }
