@@ -18,7 +18,7 @@ const formatMessagePlugin = [
   'transform-format-message',
   {
     generateId: 'underscored_crc32',
-    outFile: 'locales/en.json'
+    outFile: 'locales/en.json',
   },
 ]
 
