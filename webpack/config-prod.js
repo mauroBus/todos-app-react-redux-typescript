@@ -12,7 +12,7 @@ const baseConfig = require('./config-base')
 module.exports = merge(baseConfig, {
   mode: 'production',
   bail: true,
-  devtool: 'cheap-module-source-map',
+  devtool: 'hidden-source-map',
 
   output: {
     filename: 'static/js/[name].[chunkhash:8].js',

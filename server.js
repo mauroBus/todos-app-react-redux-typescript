@@ -1,6 +1,6 @@
 var static = require('node-static')
 
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 4000
 var staticServer = new static.Server('./dist')
 
 require('http')
